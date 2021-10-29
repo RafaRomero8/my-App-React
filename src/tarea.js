@@ -10,14 +10,9 @@ const CounterApp = ({value =10}) => {
    // setCounter(counter +1);
    setCounter( (c) =>c +1);
   }
-  const handleReset = () =>{
-    setCounter( value)
-
-  }
-  const handleRemove  = ()=>{
-    setCounter( (c) =>c -1)
-  }
-
+  const handleReset = () =>{setCounter( value)}
+  const handleRemove  = ()=> setCounter( (c) =>c -1)
+  
   return (
         <>
           <h1>CounterApp</h1>  
